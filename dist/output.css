@@ -858,10 +858,6 @@ Ensure the default browser behavior of the `hidden` attribute.
   border-radius: 9999px;
 }
 
-.rounded-tl-full {
-  border-top-left-radius: 9999px;
-}
-
 .border-2 {
   border-width: 2px;
 }
@@ -1576,10 +1572,6 @@ Ensure the default browser behavior of the `hidden` attribute.
 }
 
 @media (min-width: 1536px) {
-  .\32xl\:inline {
-    display: inline;
-  }
-
   .\32xl\:h-80 {
     height: 20rem;
   }
