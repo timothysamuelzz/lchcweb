@@ -29,6 +29,16 @@
                         <a href="#contactUs">Contact Us</a>
                     </div>
                 </div>
+                <!-- Mobile menu hamburger button -->
+                <div class="md:hidden flex items-center">
+                    <button class="outline-none mobile-menu-button">
+                        <svg class=" w-6 h-6 text-white-500 hover:text-orange-500 " x-show="!showMenu" fill="none"
+                            stroke-linecap="round" stroke-linejoin="round" stroke-width="2" viewBox="0 0 24 24"
+                            stroke="currentColor">
+                            <path d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
                 <div class="flex space-x-6 ">
                     <a href="" class="hidden xl:flex px-9 py-3 border-2"><button class="font-semibold">Donate</button></a>
                     <a href="#contactUs" class="hidden xl:flex px-9 py-3 bg-gradient-to-br from-gradientOra1 to-gradientOra2"><button class="font-semibold">Join LCHC</button></a>
@@ -40,6 +50,29 @@
                     </div>
                 </div>
             </div>
+             <!-- mobile menu -->
+            <div class="hidden mobile-menu">
+                <ul class="">
+                    <li class="active"><a href="#home" class="block text-sm px-2 py-4 hover:text-selected-text transition duration-300">Home</a></li>
+                    <li><a href="#aboutUs" class="block text-sm px-2 py-4 hover:text-selected-text transition duration-300">About LCHC</a></li>
+                    <li><a href="#projects" class="block text-sm px-2 py-4 hover:text-selected-text transition duration-300">Projects</a></li>
+                    <li><a href="#ourTeam" class="block text-sm px-2 py-4 hover:text-selected-text transition duration-300">Our Team</a></li>
+                    <li><a href="#testimonials" class="block text-sm px-2 py-4 hover:text-selected-text transition duration-300">Testimonials</a></li>
+                    <li><a href="#newsletter" class="block text-sm px-2 py-4 hover:text-selected-text transition duration-300">Newsletter</a></li>
+                    <li><a href="#contactUs" class="block text-sm px-2 py-4 hover:text-selected-text transition duration-300">Contact Us</a></li>
+                </ul>
+            </div>
+            <script>
+                const btn = document.querySelector("button.mobile-menu-button");
+                const menu = document.querySelector(".mobile-menu");
+
+                btn.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                });
+                menu.addEventListener("click", () => {
+                    menu.classList.toggle("hidden");
+                })
+            </script>
         </nav>
     </header>
 
@@ -311,9 +344,9 @@
                     </div>
                 </div>
             </div>
-            <script src="/src/script.js"></script>
+            <!-- <script src="/src/script.js"></script> -->
             <!-- Awards Section -->
-            <div class="flex w-full bg-[url('/img/2542.jpg')] bg-cover">
+            <!-- <div class="flex w-full bg-[url('/img/2542.jpg')] bg-cover">
                 <div class=" flex w-4/6 mx-auto my-12 justify-between space-x-4">
                     <div class="flex justify-center items-center"><img src="/img/award.svg" alt="award1" class="p-4"></div>
                     <div class="flex justify-center items-center"><img src="/img/award.svg" alt="award1" class="p-2"></div>
@@ -321,7 +354,7 @@
                     <div class="flex justify-center items-center"><img src="/img/award.svg" alt="award1" class="p-2"></div>
                     <div class="flex justify-center items-center"><img src="/img/award.svg" alt="award1" class="p-4"></div>
                 </div>
-            </div>
+            </div> -->
         </div>
     </Section>
 
